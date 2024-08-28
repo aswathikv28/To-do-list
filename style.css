@@ -1,0 +1,215 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+}
+
+.title h1{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-div{
+  margin: 40px 0;
+  padding: auto;
+}
+.add-sort-button{
+  display: flex;
+  gap: 10px;
+}
+.user-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding:30px 0;
+  width: 60%;
+  margin: auto;
+  gap: 10px;
+}
+.text-box{
+  padding: 10px;
+  max-width: 45%;
+  width: 100%;
+  min-width: 80%;
+  font-size: 18px;
+}
+.text-box:focus{
+  background-color: rgb(236, 246, 249);
+}
+button {
+  font-size: 20px;
+  padding: 10px 40px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 231, 255);
+}
+.clear-button{
+  width: auto;
+  margin: auto;
+}
+button:hover{
+  background-color:rgb(56, 109, 151);
+  color:black ;
+  font-weight: 600;
+  color: white;
+}
+
+#items-div{
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  margin: 1% 0;
+  padding:0 5%;
+  box-sizing: border-box;
+  border: 2px solid rgb(133, 129, 129);
+}
+
+.item-container{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 25px;
+  margin: 10px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px dashed black;
+  
+}
+.checkbox-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons-modify{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px;
+}
+.delete-icon-div,
+.edit-icon-div {
+  border: 0.5px solid black; 
+  padding: 5px 10px; 
+  box-sizing: border-box; 
+  width: 80%; 
+  height: auto; 
+  align-items: center;
+}
+
+.delete-icon-div{
+  background-color: rgb(229, 139, 139);
+}
+.delete-icon-div:hover{
+  background-color: rgb(239, 97, 97);
+  cursor: pointer;
+}
+.edit-icon-div{
+  background-color: rgb(161, 190, 216);
+}
+.edit-icon-div:hover{
+  background-color: rgb(79, 167, 245);
+  cursor: pointer;
+}
+.item-container.checked{
+
+  background-color: rgb(204, 243, 243);
+  border: 1px black;
+  text-decoration: line-through;
+}
+.check-box{
+  height: 20px;
+  width: 20px;
+}
+.check-box:hover{
+  cursor: pointer;
+ 
+}
+.item-container img{
+  width: 20px;
+  height: 20px;
+}
+
+.clear-all{
+  display: flex;
+  
+  justify-content: center;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#save-edit-button{
+  margin-top: 15px;
+}
+
+@media (max-width:900px){
+  .container{
+    width: 90%;
+    padding: 5px;
+  }
+  .user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+  button{
+    margin-top: 20px;
+    padding:0 40%;
+  }
+  .add-sort-button{
+    justify-content: center;
+  }
+  .label{
+    font-size: 18px;
+  }
+  .delete-icon-div,
+.edit-icon-div {
+  border: none;
+  background-color: transparent;
+  padding: 2px;
+}
+  
+  
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>To-Do List</h1>
+    </div>
+    <div class="main-div">
+      <section class="user-input">
+        <input type="text" id="user-input-text" class = "text-box" placeholder="Enter your list">
+        <div class="add-sort-button">
+          <button id="add-button">Add</button>
+          <button id="sort-button">Sort</button>
+        </div>
+      </section>
+      <div id="items-div"></div>
+      <div id="clear-all"></div>
+    </div>
+  </div>
+
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <input id="edit-text-box" class = "text-box" type="text" />
+      <button id="save-edit-button">Save</button>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
